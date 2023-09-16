@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CrosshairHero</string>
+    <string name="app_text">Hello, Android!</string>
+	<string name="app_start">start</string>
+</resources>

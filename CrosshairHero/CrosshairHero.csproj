@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationId>com.companyname.CrosshairHero</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\drawable\apps__24px.xml" />
+    <None Remove="Resources\drawable\bordered_button.xml" />
+    <None Remove="Resources\drawable\close__24px.xml" />
+    <None Remove="Resources\drawable\crosshair_long.png" />
+    <None Remove="Resources\drawable\crosshair_plus.png" />
+    <None Remove="Resources\drawable\crosshair_point_scan.png" />
+    <None Remove="Resources\drawable\crosshair_rec.png" />
+    <None Remove="Resources\drawable\crosshair_sniper.png" />
+    <None Remove="Resources\drawable\crosshair_square.png" />
+    <None Remove="Resources\drawable\crosshair_star.png" />
+    <None Remove="Resources\drawable\crosshair_token.png" />
+    <None Remove="Resources\drawable\cross_1.xml" />
+    <None Remove="Resources\drawable\cross_10.xml" />
+    <None Remove="Resources\drawable\cross_11.xml" />
+    <None Remove="Resources\drawable\cross_12.xml" />
+    <None Remove="Resources\drawable\cross_13.xml" />
+    <None Remove="Resources\drawable\cross_14.xml" />
+    <None Remove="Resources\drawable\cross_15.xml" />
+    <None Remove="Resources\drawable\cross_16.xml" />
+    <None Remove="Resources\drawable\cross_17.xml" />
+    <None Remove="Resources\drawable\cross_18.xml" />
+    <None Remove="Resources\drawable\cross_19.xml" />
+    <None Remove="Resources\drawable\cross_2.xml" />
+    <None Remove="Resources\drawable\cross_20.xml" />
+    <None Remove="Resources\drawable\cross_21.xml" />
+    <None Remove="Resources\drawable\cross_3.xml" />
+    <None Remove="Resources\drawable\cross_4.xml" />
+    <None Remove="Resources\drawable\cross_5.xml" />
+    <None Remove="Resources\drawable\cross_6.xml" />
+    <None Remove="Resources\drawable\cross_7.xml" />
+    <None Remove="Resources\drawable\cross_8.xml" />
+    <None Remove="Resources\drawable\cross_9.xml" />
+    <None Remove="Resources\drawable\home__24px.xml" />
+    <None Remove="Resources\drawable\outline_chevron_left_24.xml" />
+    <None Remove="Resources\drawable\outline_chevron_right_24.xml" />
+    <None Remove="Resources\drawable\outline_close_24.xml" />
+    <None Remove="Resources\drawable\outline_expand_less_24.xml" />
+    <None Remove="Resources\drawable\outline_expand_more_24.xml" />
+    <None Remove="Resources\drawable\outline_sync_24.xml" />
+    <None Remove="Resources\drawable\outline_zoom_in_24.xml" />
+    <None Remove="Resources\drawable\outline_zoom_out_24.xml" />
+    <None Remove="Resources\drawable\outline_zoom_out_map_24.xml" />
+    <None Remove="Resources\drawable\palette_24px.xml" />
+    <None Remove="Resources\drawable\rounded.xml" />
+    <None Remove="Resources\drawable\roundedcircule.xml" />
+    <None Remove="Resources\drawable\roundededge.xml" />
+    <None Remove="Resources\drawable\settings_24px.xml" />
+    <None Remove="Resources\drawable\war_1.png" />
+    <None Remove="Resources\drawable\war_2.png" />
+    <None Remove="Resources\layout\bottom_sheet_layout.xml" />
+    <None Remove="Resources\layout\color_box_item.xml" />
+    <None Remove="Resources\layout\list_item_imageview.xml" />
+    <None Remove="Resources\layout\main_controls.xml" />
+    <None Remove="Resources\layout\main_controls_colors.xml" />
+    <None Remove="Resources\layout\main_cross_icon.xml" />
+    <None Remove="Resources\layout\main_notification.xml" />
+    <None Remove="Resources\values\colors.xml" />
+    <None Remove="Resources\values\dimens.xml" />
+    <None Remove="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.3" />
+    <PackageReference Include="Xamarin.AndroidX.ViewPager2" Version="1.0.0.21" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.0" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.9.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Halpers\" />
+  </ItemGroup>
+</Project>
