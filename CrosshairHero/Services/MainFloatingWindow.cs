@@ -141,10 +141,9 @@ namespace CrosshairHero.Services
             {
                 layoutParams1.Type = WindowManagerTypes.Phone;
             }
-
-
-            layoutParams1.Width = 200;
-            layoutParams1.Height = 300;
+ 
+            layoutParams1.Width = WindowManagerLayoutParams.WrapContent;
+            layoutParams1.Height = WindowManagerLayoutParams.WrapContent;
             layoutParams1.X = 130;
             layoutParams1.Y = 250;
 

@@ -51,7 +51,6 @@ namespace CrosshairHero.Adapters
             }
 
             imageView.SetImageResource(imageArray[position]);
-
             imageView.Click += (sender, args) =>
             {
                 // Raise the ImageClicked event with the image location
