@@ -15,7 +15,7 @@ namespace CrosshairHero
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        ImageButton show_main_cross;
+        Button show_main_cross;
         ImageButton changecrosscolor;
         ImageButton changecrosshair;
         Color[] colors;
@@ -56,7 +56,7 @@ namespace CrosshairHero
         //private AppCloseReceiver appCloseReceiver;
         public void Views()
         {
-            show_main_cross = (ImageButton)FindViewById(Resource.Id.show_main_cross);
+            show_main_cross = (Button)FindViewById(Resource.Id.show_main_cross);
             changecrosshair = (ImageButton)FindViewById(Resource.Id.changecrosshair);
             changecrosscolor = (ImageButton)FindViewById(Resource.Id.changecrosscolor);
             show_main_cross.Click += Show_main_cross_Click;

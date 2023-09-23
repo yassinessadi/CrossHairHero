@@ -131,7 +131,10 @@ namespace CrosshairHero.Services
                 ViewGroup.LayoutParams.WrapContent,
                 WindowManagerTypes.Phone,
                 WindowManagerFlags.NotFocusable,
-                Format.Translucent);
+                Format.Translucent)
+            {
+                Gravity = GravityFlags.Bottom | GravityFlags.End,
+            };
 
             if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
             {
@@ -144,8 +147,8 @@ namespace CrosshairHero.Services
  
             layoutParams1.Width = WindowManagerLayoutParams.WrapContent;
             layoutParams1.Height = WindowManagerLayoutParams.WrapContent;
-            layoutParams1.X = 130;
-            layoutParams1.Y = 250;
+            //layoutParams1.X = 130;
+            //layoutParams1.Y = 250;
 
             windowManager.AddView(main_controls, layoutParams1);
 
@@ -299,8 +302,8 @@ namespace CrosshairHero.Services
                     int movedY = nowY - y;
                     x = nowX;
                     y = nowY;
-                    layoutParams1.X = layoutParams1.X + movedX;
-                    layoutParams1.Y = layoutParams1.Y + movedY;
+                    layoutParams1.X = layoutParams1.X - movedX;
+                    layoutParams1.Y = layoutParams1.Y - movedY;
 
 
                     windowManager.UpdateViewLayout(main_controls, layoutParams1);
