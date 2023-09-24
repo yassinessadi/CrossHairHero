@@ -12,12 +12,13 @@ using Android.OS;
 
 namespace CrosshairHero
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        Button show_main_cross;
+        ImageButton show_main_cross;
         ImageButton changecrosscolor;
         ImageButton changecrosshair;
+        ImageButton moveRight_wars;
         Color[] colors;
 
         private int[] imageArray = 
@@ -51,19 +52,26 @@ namespace CrosshairHero
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
-            Views();   
+            Views();
         }
         //private AppCloseReceiver appCloseReceiver;
         public void Views()
         {
-            show_main_cross = (Button)FindViewById(Resource.Id.show_main_cross);
+            show_main_cross = (ImageButton)FindViewById(Resource.Id.show_main_cross);
             changecrosshair = (ImageButton)FindViewById(Resource.Id.changecrosshair);
             changecrosscolor = (ImageButton)FindViewById(Resource.Id.changecrosscolor);
+            moveRight_wars = (ImageButton)FindViewById(Resource.Id.moveRight_wars);
             show_main_cross.Click += Show_main_cross_Click;
             changecrosshair.Click += Changecrosshair_Click;
             changecrosscolor.Click += Changecrosscolor_Click;
+            moveRight_wars.Click += MoveRight_wars_Click;
             //appCloseReceiver = new AppCloseReceiver();
             //RegisterReceiver(appCloseReceiver, new IntentFilter("CloseApp"));
+        }
+
+        private void MoveRight_wars_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Changecrosscolor_Click(object sender, EventArgs e)

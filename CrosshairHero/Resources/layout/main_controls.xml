@@ -112,7 +112,7 @@
             android:layout_height="20dp"/>
         <SeekBar
             android:min="20"
-            android:max="100"
+            android:max="300"
             android:id="@+id/SizeControl"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/iconSize"

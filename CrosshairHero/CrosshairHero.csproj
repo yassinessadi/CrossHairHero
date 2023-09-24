@@ -42,6 +42,8 @@
     <None Remove="Resources\drawable\cross_7.xml" />
     <None Remove="Resources\drawable\cross_8.xml" />
     <None Remove="Resources\drawable\cross_9.xml" />
+    <None Remove="Resources\drawable\gameController.png" />
+    <None Remove="Resources\drawable\gamecontrollers.png" />
     <None Remove="Resources\drawable\home__24px.xml" />
     <None Remove="Resources\drawable\outline_chevron_left_24.xml" />
     <None Remove="Resources\drawable\outline_chevron_right_24.xml" />
@@ -53,6 +55,7 @@
     <None Remove="Resources\drawable\outline_zoom_out_24.xml" />
     <None Remove="Resources\drawable\outline_zoom_out_map_24.xml" />
     <None Remove="Resources\drawable\palette_24px.xml" />
+    <None Remove="Resources\drawable\power_settings_stop_active.xml" />
     <None Remove="Resources\drawable\rounded.xml" />
     <None Remove="Resources\drawable\roundedcircule.xml" />
     <None Remove="Resources\drawable\roundededge.xml" />
